@@ -41,15 +41,12 @@ test('Step 2 - Navigate to PIM and Add Employee', async ({ page }) => {
     await expect(page).toHaveURL(/web\/index.php\/pim\/addEmployee/);
     // await expect(page.getByText('Add Employee')).toBeVisible();
 
-    // ── Fill employee form ──
+    // Fill employee form
     await pimPage.fillEmployeeForm(employeeData);
 
-    // ── Fill login details (optional) ──
+    // Fill login details (optional)
     await pimPage.fillLoginDetails(loginDetails);
 
-    // ── Save ──
+    // Save
     await pimPage.saveEmployee();
-
-    // Dynamic URL check (best practice)
-    // await expect(page).toHaveURL(/web\/index.php\/pim\/viewPersonalDetails\/empNumber\/\d+/);
 });
