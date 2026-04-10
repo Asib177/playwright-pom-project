@@ -99,7 +99,7 @@ class PimPage {
         this.lastNameInput = page.getByPlaceholder('Last Name');
 
         /**
-         * ✅ FIXED LOCATOR: 
+         * FIXED LOCATOR: 
          * We use 'oxd-input-group' instead of 'oxd-form-row'.
          * 'oxd-input-group' is the specific container for a single field + label.
          * Using a regex /^Employee Id$/ ensures we don't accidentally match other fields.
@@ -116,7 +116,7 @@ class PimPage {
         // this.confirmPasswordInput = page.locator('input[autocomplete="new-password"]').last();
 
         //////////////////
-        // ✅ REFINED LOGIN DETAIL LOCATORS
+        // REFINED LOGIN DETAIL LOCATORS
         // Target the inputs based on their specific label containers
         this.usernameInput = page
             .locator('div.oxd-input-group')

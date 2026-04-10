@@ -33,7 +33,7 @@ test('Step 2 - Navigate to PIM and Add Employee', async ({ page }) => {
     const pimPage = new PimPage(page);
     await pimPage.goToPim();
 
-    // ✅ FIXED URL (regex + typo)
+    // FIXED URL (regex + typo)
     await expect(page).toHaveURL(/web\/index.php\/pim\/viewEmployeeList/);
 
     // ── Click Add Employee ──
@@ -50,6 +50,6 @@ test('Step 2 - Navigate to PIM and Add Employee', async ({ page }) => {
     // ── Save ──
     await pimPage.saveEmployee();
 
-    // ✅ Dynamic URL check (best practice)
+    // Dynamic URL check (best practice)
     // await expect(page).toHaveURL(/web\/index.php\/pim\/viewPersonalDetails\/empNumber\/\d+/);
 });
