@@ -1,4 +1,3 @@
-// testData.js
 const loginData = {
     username: "Admin",
     password: "admin123"
@@ -8,11 +7,11 @@ const employeeData = {
     firstName:  'Rakibul',
     middleName: 'Asib',
     lastName:   'Redoy',
-    employeeId: '31055',
+    employeeId: '31077',
 };
 
 const loginDetails = {
-    username: 'rakibul55',
+    username: 'rakibul77',
     password: 'rakibul123',
 };
 
