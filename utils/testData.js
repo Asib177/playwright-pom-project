@@ -7,7 +7,7 @@ const employeeData = {
     firstName:  'Rakibul',
     middleName: 'Asib',
     lastName:   'Redoy',
-    employeeId: '31077',
+    employeeId: '31078',
 };
 
 const loginDetails = {
@@ -15,4 +15,9 @@ const loginDetails = {
     password: 'rakibul123',
 };
 
-module.exports = { loginData, employeeData, loginDetails };
+const myUser = {
+    username: 'rakibul',
+    password: 'rakibul123',
+}
+
+module.exports = { loginData, employeeData, loginDetails, myUser };
